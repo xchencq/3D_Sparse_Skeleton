@@ -1,0 +1,431 @@
+Panels:
+  - Class: rviz/Tool Properties
+    Expanded: ~
+    Name: Tool Properties
+    Splitter Ratio: 0.5
+  - Class: rviz/Tool Properties
+    Expanded: ~
+    Name: Tool Properties
+    Splitter Ratio: 0.5
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Basic1/Grid1
+        - /Basic1/Robot1
+        - /Complex display1/Grey_vertices1
+        - /Nodes1
+        - /Connections1
+        - /RawMap1
+        - /RawMap1/Autocompute Value Bounds1
+        - /Path1
+        - /A_star1
+        - /Current_frontier1
+        - /Current_frontier1/Namespaces1
+      Splitter Ratio: 0.5220990180969238
+    Tree Height: 441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 0.5
+          Cell Size: 1
+          Class: rviz/Grid
+          Color: 0; 0; 0
+          Enabled: true
+          Line Style:
+            Line Width: 0.029999999329447746
+            Value: Lines
+          Name: Grid
+          Normal Cell Count: 0
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Plane: XY
+          Plane Cell Count: 60
+          Reference Frame: <Fixed Frame>
+          Value: true
+        - Class: rviz/Axes
+          Enabled: true
+          Length: 10
+          Name: Axes
+          Radius: 0.10000000149011612
+          Reference Frame: <Fixed Frame>
+          Value: true
+        - Class: rviz/Marker
+          Enabled: false
+          Marker Topic: /odom_visualization/robot
+          Name: Robot
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: false
+      Enabled: false
+      Name: Basic
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 173; 127; 168
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Black_vertices
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.009999999776482582
+          Style: Points
+          Topic: /skeleton_finder_3D/black_vertices
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 252; 175; 62
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: White_vertices
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.009999999776482582
+          Style: Points
+          Topic: /skeleton_finder_3D/white_vertices
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 136; 138; 133
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Grey_vertices
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 12
+          Size (m): 0.009999999776482582
+          Style: Points
+          Topic: /skeleton_finder_3D/grey_vertices
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Class: rviz/Marker
+          Enabled: false
+          Marker Topic: /skeleton_finder_3D/facets
+          Name: Frontiers
+          Namespaces:
+            {}
+          Queue Size: 1
+          Value: false
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /skeleton_finder_3D/polygons
+          Name: Polygons
+          Namespaces:
+            "": true
+          Queue Size: 10000
+          Value: true
+      Enabled: true
+      Name: Complex display
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 239; 41; 41
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Nodes
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.3499999940395355
+      Style: Spheres
+      Topic: /skeleton_finder_3D/nodes
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /skeleton_finder_3D/connections
+      Name: Connections
+      Namespaces:
+        "": true
+      Queue Size: 100
+      Value: true
+    - Alpha: 0.15000000596046448
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 5
+        Min Value: -8
+        Value: false
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 204; 184; 241
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: RawMap
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 4
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /map/map
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /skeleton_finder_3D/path
+      Name: Path
+      Namespaces:
+        "": true
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: ""
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: click_map
+      Position Transformer: ""
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /map_generator/global_cloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /A_star/parents
+          Name: Parents
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: false
+          Marker Topic: /A_star/connections
+          Name: Connections
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 193; 125; 17
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: A_star_nodes
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.5
+          Style: Spheres
+          Topic: /A_star/nodes
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+      Enabled: true
+      Name: A_star
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /skeleton_finder_3D/frontier
+      Name: Current_frontier
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 255; 255; 255
+    Default Light: true
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/MoveCamera
+    - Class: rviz_plugins/Goal3DTool
+      Topic: goal
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Angle: 0
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Scale: 24.403095245361328
+      Target Frame: map
+      Value: TopDownOrtho (rviz)
+      X: -7.331049919128418
+      Y: 11.695323944091797
+    Saved:
+      - Class: rviz/Orbit
+        Distance: 52.31420135498047
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 6.267759799957275
+          Y: 9.371190071105957
+          Z: 8.260049819946289
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.9598000049591064
+        Target Frame: map
+        Value: Orbit (rviz)
+        Yaw: 4.708189964294434
+      - Angle: -0.11999999731779099
+        Class: rviz/TopDownOrtho
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Invert Z Axis: false
+        Name: TopDownOrtho
+        Near Clip Distance: 0.009999999776482582
+        Scale: 199.4429931640625
+        Target Frame: map
+        Value: TopDownOrtho (rviz)
+        X: 4.8997697830200195
+        Y: 3.5378499031066895
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 1052
+  Hide Left Dock: true
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000001b4000003a5fc0200000010fb0000000a0049006d0061006700650000000041000001760000000000000000fb000000100044006900730070006c006100790073000000003d000001fd000000c900fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000001c5000000810000005c00fffffffb0000000a0049006d00610067006501000001fc0000011d0000000000000000fb0000000a0049006d0061006700650100000154000000e90000000000000000fb0000000a0049006d0061006700650100000211000001080000000000000000fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000041000004f40000005c00fffffffb000000100044006900730070006c0061007900730100000041000002d80000000000000000fb0000000a0049006d00610067006501000001db0000013e0000000000000000fb0000000a0049006d0061006700650100000186000001930000000000000000fb0000000a005600690065007700730000000240000001a2000000a400fffffffb0000000a0049006d00610067006501000001da0000013f0000000000000000fb0000000a0049006d006100670065010000027d0000009c0000000000000000fb0000000a0049006d00610067006501000001d2000001470000000000000000fb0000000a0049006d00610067006501000001af0000016a0000000000000000fb000000140043006f006c006f00720044006500700074006801000003ef00000016000000000000000000000780000003c200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1920
+  X: 0
+  Y: 216

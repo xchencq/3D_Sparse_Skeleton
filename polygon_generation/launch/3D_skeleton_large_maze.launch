@@ -1,0 +1,54 @@
+<launch>
+  <node name ="skeleton_finder_3D_test" pkg ="polygon_generation" type ="skeleton_finder_3D_test" output = "screen" required ="true">
+    <param name="mapBoundary/x_min" value="-30.0"/>
+    <param name="mapBoundary/x_max" value="30.0"/>
+    <param name="mapBoundary/y_min" value="-30.0"/>
+    <param name="mapBoundary/y_max" value="30.0"/>
+    <param name="mapBoundary/z_min" value="-0.5"/>
+    <param name="mapBoundary/z_max" value="2.4"/>
+    <param name="start_x" value="0"/>
+    <param name="start_y" value="0"/>
+    <param name="start_z" value="1"/>
+    <param name="path_start_x" value="28"/>
+    <param name="path_start_y" value="-28"/>
+    <param name="path_start_z" value="1"/>
+    <param name="path_target_x" value="0"/>
+    <param name="path_target_y" value="28"/>
+    <param name="path_target_z" value="1"/>
+
+    <param name="is_simulation" value="true"/>
+    <param name="frontier_creation_threshold" value="1.0"/>
+    <param name="frontier_jump_threshold" value="3.0"/>
+    <param name="frontier_split_threshold" value="3.0"/>
+    <param name="min_loop_creation_threshold" value="1"/>
+    <param name="min_flowback_creation_radius_threshold" value="0.3"/>
+    <param name="min_node_radius" value="1.0"/>
+    <param name="search_margin" value="0.25"/>
+    <param name="max_ray_length" value="4.5"/>
+    <param name="max_expansion_ray_length" value="5.0"/>
+    <!-- <param name="max_ray_length" value="3.0"/>
+    <param name="max_expansion_ray_length" value="3.0"/> -->
+    <param name="max_height_diff" value="3.0"/>
+    <param name="sampling_density" value="100"/>
+    <param name="max_facets_grouped" value="10"/>
+    <param name="resolution" value="0.2"/>
+    <param name="truncated_z_high" value="2.5"/>
+    <param name="truncated_z_low" value="0.2"/>
+
+    <param name="debug_mode" value="false"/>
+    <param name="bad_loop" value="true"/>
+
+    <param name="visualize_final_result_only" value="true"/>
+    <param name="visualize_all" value="true"/>
+    <param name="visualize_outwards_normal" value="true"/>
+    <param name="visualize_nbhd_frontiers" value="false"/>
+    <param name="visualize_black_polygon" value="true"/>
+  </node>
+
+  <node name ="map" pkg ="polygon_generation" type ="map" output = "screen" args="$(find polygon_generation)/resource/large_maze.pcd">
+    <param name="map_index" value="6"/>
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d $(find polygon_generation)/launch/rviz_config/rviz_config_3D.rviz">
+  </node>
+</launch>
