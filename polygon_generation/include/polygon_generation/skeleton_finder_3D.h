@@ -6,9 +6,9 @@
 #include <random>
 #include <vector>
 
-#include <kdtree/kdtree.h>
 #include "../utils/quickhull/QuickHull.hpp"
 #include "utils/A_star.h"
+#include "utils/kdtree.h"
 
 #include <pcl/kdtree/kdtree_flann.h>
 #include <pcl/point_cloud.h>
