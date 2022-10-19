@@ -9,15 +9,15 @@ A cycle formation scheme is also utilized to maintain skeleton graph compactness
 __Authors__: Xinyi Chen, [Boyu Zhou](http://boyuzhou.net), Jiarong Lin, [Yichen Zhang](https://yzhangec.github.io/), [Fu Zhang](https://www.mech.hku.hk/academic-staff/Zhang-F) and [Shaojie Shen](https://uav.hkust.edu.hk/group/) from the [HUKST Aerial Robotics Group](https://uav.hkust.edu.hk/) and [HKU Mechatronics and Robotic Systems (MaRS) Lab](https://mars.hku.hk/).
 
 <p align="center">
-  <img src="files/hall.gif" width = "600" />
+  <img src="files/hall.gif" width = "700" />
 </p>
 
 Benchmark comparison with state-of-the-art works demonstrates that our approach generates sparse graphs in a substantially shorter time, giving high-quality global planning paths. 
 
 <p align="center">
-  <img src="files/benchmark_machine.png" width = "600" />
-  <img src="files/benchmark_maze1.png" width = "600" />
-  <img src="files/benchmark_maze2.png" width = "600" />
+  <img src="files/benchmark_machine.png" width = "700" />
+  <img src="files/benchmark_maze1.png" width = "700" />
+  <img src="files/benchmark_maze2.png" width = "700" />
 </p>
 
 Video is available at: [video](https://youtu.be/lzDtlfvQlpQ).
