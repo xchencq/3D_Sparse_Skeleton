@@ -15,9 +15,9 @@ __Authors__: Xinyi Chen, [Boyu Zhou](http://boyuzhou.net), [Jiarong Lin](https:/
 Benchmark comparison with state-of-the-art works demonstrates that our approach generates sparse graphs in a substantially shorter time, giving high-quality global planning paths. 
 
 <p align="center">
-  <img src="files/benchmark_machine.png" width = "750" />
-  <img src="files/benchmark_maze1.png" width = "750" />
-  <img src="files/benchmark_maze2.png" width = "750" />
+  <img src="files/benchmark_machine.png" width = "700" />
+  <img src="files/benchmark_maze1.png" width = "700" />
+  <img src="files/benchmark_maze2.png" width = "700" />
 </p>
 
 Video is available at: [video](https://youtu.be/lzDtlfvQlpQ).
