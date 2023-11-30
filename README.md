@@ -83,3 +83,9 @@ _multi_floored_hall.pcd:_
   <img src="files/hall.png" width = "600"/>
 </p>
 
+## Known Issues
+If you encounter a runtime error when triggering the skeleton generation, you may need to add the following code snippet at the beginning of the function ```bool SkeletonFinder::initFrontier(FrontierPtr frontier)``` in ```skeleton_finder_3D.cpp```:
+```
+if (frontier->facets.size() == 0)
+    return false;
+```
