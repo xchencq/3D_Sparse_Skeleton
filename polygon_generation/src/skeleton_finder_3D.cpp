@@ -121,9 +121,9 @@ inline pair<double, int> SkeletonFinder::radiusSearch(Vector3d &search_Pt) {
     pointRadiusSquaredDistance.clear();
 
     kdtreesForPolys.at(node->index)
-        ->nearestKSearch(searchPoint, 1, pointIdxRadiusSearchForRawMap,
-                         pointRadiusSquaredDistanceForRawMap);
-    double radius = sqrt(pointRadiusSquaredDistanceForRawMap[0]);
+        ->nearestKSearch(searchPoint, 1, pointIdxRadiusSearch,
+                         pointRadiusSquaredDistance);
+    double radius = sqrt(pointRadiusSquaredDistance[0]);
 
     if (radius < min_dis) {
       min_dis = radius;
